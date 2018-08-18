@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>DBS Login</title>
+</h:head>
+<h:body bgcolor="gray">
+	<h3>DBS Login</h3>
+	<h:form>
+<!-- 		<h:inputText value="#{helloBean.name}"></h:inputText> -->
+<!-- 		<h:commandButton value="Welcome Me" action="welcome"></h:commandButton> -->
+
+	<h:outputLabel value="User"    for="user"   />
+	<h:inputText  id="user"   value="#{logBean.log.user}"    />
+
+	<br>
+	<br>
+	<h:outputLabel  value="Password"    for="password"   />
+	<h:inputSecret  id="password"   value="#{logBean.log.password}" />
+	</br>
+	</br>
+		<h:commandButton  style="background: blue; color: white; "  value="Entrar"      action="#{logBean.entrar}"      />
+	</h:form>
+</h:body>
+</html>
